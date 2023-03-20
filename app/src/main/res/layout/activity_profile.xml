@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6C6C6"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_title"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/profile_picture"
+        android:text="닉네임"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/profile_title"
+        android:background="@drawable/profile_picture"
+        android:clickable="true"
+        android:contentDescription="프로필 사진"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_picture"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round"
+        android:hint="이름"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/bio_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_edit_text"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round"
+        android:hint="소개"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="저장하기"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

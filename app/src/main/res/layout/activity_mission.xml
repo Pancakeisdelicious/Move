@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#C6C6C6">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="@drawable/spinner_ranking1"
+        android:dropDownWidth="50dp"
+        android:contentDescription="spinner1"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/trophy" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginright="50dp"
+        android:background="@drawable/spinner_ranking1"
+        android:dropDownWidth="50dp"
+        android:contentDescription="spinner2"/>
+
+</LinearLayout>
